@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="en" />
+    <meta name="title" content="Contact :: Nmovies" />
+    <meta name="description" content="Contact :: Nmovies,  Nmoves 2022 movies" />
+    <meta name="keywords" content="Nmovies, Nmovies 2022, New Mkv HD Movies, Mp4 Movies, hd Movies, 2022 new bollywood movies download, High Quility Movies, hd mobile movies, hindi movies 2022 download, hd movies download, mobile movies, " />
+    <meta property="og:title" content="contact :: Nmovies" />
+    <meta property="og:description" content="" />
+    <meta property="og:keywords" content="Nmovies, filmyhit, New Mkv HD Movies, Mp4 Movies, hd Movies, 3gp, Mp4, HD Avi, HD Mp4, High Quility Movies, hd mobile movies, mp4hdmovies, hd movies download, mobile movies, " />
+     <meta name="distribution" content="global" />
+     <meta name="author" content="Nmovies" />
+    <meta property="og:site_name" content="Nmovies"/>
+    <!-- css files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/phone.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <%- include('partials/navbar') -%>
+
+    <!-- imgae slider sections -->
+    <%- include('partials/image-slider') -%>
+
+
+    <main>
+        <section class="main-section ">
+            <div class="titlle-name">
+                <h4>contact Us</h4>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-container">
+                    <form method="post">
+                        <input type="text" name="name" id="name" placeholder="Enter your Name" required maxlength="13">
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+                        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Enter Your message" required></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    </main>
+<!-- footer  -->
+<%- include('partials/footer') -%>
+    <script src="/js/js.js"></script>
+</body>
+
+</html>

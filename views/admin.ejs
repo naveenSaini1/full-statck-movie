@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="robots" content="noindex" />
+    <title>Admin</title>
+</head>
+<body>
+    <!-- whole container ++ -->
+    <div class="container">
+        <div class="admin-details">
+            <div class="new-data del">
+                <h3>New Data</h3>
+            </div>
+            <div class="all-post del">
+                <h3>All Post</h3>
+            </div>
+            <div class="messages del">
+                <h3>Messages</h3>
+            </div>
+        </div>
+        <!-- new data container  -->
+        <div class="admin-data">
+            <div class="admin-new-data dis">
+                <div class="title-name">
+                    <h4>New Data</h4>
+                </div>
+                views full <span id="views">0</span>
+                download <span id="viewsi">0</span>
+                <form method="post" action="/login/admin" enctype="multipart/form-data">
+                    <input type="text" name="movieName" placeholder="Enter Movie Name No download Name" required>
+                    <input type="text" name="movieNameD" placeholder="Enter Movie name With Downlaod Name" required>
+                    <input type="text" name="keyword" placeholder="Enter Movie Keyword" required>
+                    <input type="file" name="img" id="img" required>
+                    <input type="text" name="series" id="series" placeholder="Enter Movie part" required>
+                    <input type="text" name="Lan" id="series" placeholder="Enter Movie Language" required>
+                    <select name="cat" id="cat" required style="margin-left: 1rem; padding: 10px 5px;outline: none;">
+                        <option value="home">Home</option>
+                        <option value="hollywood">HollyWood Dub</option>
+                        <option value="south">South Dub</option>
+                        <option value="punjabi">Punjabi</option>
+                        <option value="Web">web series</option>
+                        <option value="bollywood">Bollywood</option>
+                    </select>
+                    <input type="text" name="quality" id="quality" value="480p,720p,fullHd" required>
+                    <input type="text" name="rDate" id="rDate" placeholder="Enter Realse Date Ex: 28 Aug 2018">
+                    <input type="text" name="downloadALink" id="downloadAlink" placeholder="Entere Download 480 Link" required>
+                    <input type="text" name="downloadBLink" id="downloadBlink" placeholder="Entere Download 720 Link" required>
+                    <input type="text" name="downloadCLink" id="downloadClink" placeholder="Entere Download Hd Link" required>
+                    <textarea name="story" id="story" rows="10" placeholder="Entere Story Line"></textarea>
+                    <textarea name="des" id="des" rows="10" placeholder="Enter Movie Descripton" required></textarea>
+                    <input type="submit" value="Create">
+                </form>
+
+            </div>
+
+            <!-- allpost container  -->
+            <div class="admin-all-post dis">
+                <div class="title-name">
+                    <h4>All Post</h4>
+                </div>
+                <div class="post-container">
+                    <% postDat.forEach((e)=>{%>
+
+                    <div class="post">
+                        <div>
+                        <span><%=e.movieName%></span>
+                        </div>
+                        <div class="buttons">
+                            <a href="/login/admin/edit/<%=e.link%>">Edit</a>
+                            <a href="/login/admin/del/<%=e.link%>">Del</a>
+                            <a href="/login/admin/read/<%=e.link%>">Read More</a>
+                        </div>
+                    </div>
+                    <%})%>
+                
+                    </div>
+                </div>
+   <!-- messages container okay  -->
+            <div class="admin-messages dis">
+                <div class="title-name">
+                    <h4>Messages</h4>
+                </div>
+                <div class="card-container">
+                    <% mess.forEach((e)=>{%>
+                    <div class="card">
+                        <p><%=e.name%></p>
+                        <h5><%=e.email%></h5>
+                        <p><%=e.textarea%></p>
+                    </div>
+                    <%})%>
+                 </div>
+            </div>
+
+
+        </div>
+
+         
+
+
+    </div>
+    <script src="/js/admin.js"></script>
+</body>
+</html>

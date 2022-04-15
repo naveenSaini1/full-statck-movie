@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="en" />
+    <meta name="title" content="Hollywood Hindi Dubbed Mobile Movies Free Download - Nmovies" />
+    <meta name="description" content="Hollywood Hindi Dubbed Mobile Movies Free Download - Nmovies,  Nmovies 2022 movies" />
+    <meta name="keywords" content="Nmovies, Nmovies 2022, New Mkv HD Movies, Mp4 Movies, hd Movies, 2022 new bollywood movies download, High Quility Movies, hd mobile movies, hindi movies 2022 download, hd movies download, mobile movies, hollywood movies dubbed in hindi a to z,hollywood hindi dubbed movie download,hollywood hindi movie,hollywood movie hindi dubbed,hollywood movie in hindi,Hollywood Dubbed Movies,HD Hollywood Movies,Hollywood Movies in HD,Hollywood Movies Free Download,English Movies Download,English Movies Free Download, HD English Movies Download,English Movies in Mp4" />
+    <meta property="og:title" content="Hollywood Hindi Dubbed Mobile Movies Free Download - Nmovies" />
+    <meta property="og:description" content="" />
+    <meta property="og:keywords" content="Nmovies, filmyhit, New Mkv HD Movies, Mp4 Movies, hd Movies, 3gp, Mp4, HD Avi, HD Mp4, High Quility Movies, hd mobile movies, mp4hdmovies, hd movies download, mobile movies, hollywood movies dubbed in hindi a to z,hollywood hindi dubbed movie download,hollywood hindi movie,hollywood movie hindi dubbed,hollywood movie in hindi,Hollywood Dubbed Movies,HD Hollywood Movies,Hollywood Movies in HD,Hollywood Movies Free Download,English Movies Download,English Movies Free Download, HD English Movies Download,English Movies in Mp4" />
+    
+     <meta name="distribution" content="global" />
+     <meta name="author" content="Nmovies" />
+    <meta property="og:site_name" content="Nmovies"/>
+    <!-- css files -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/phone.css">
+    <title>Hollywood Hindi Dubbed Mobile Movies Free Download - Nmovies</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <%- include('partials/navbar') -%>
+
+    <!-- imgae slider sections -->
+    <%- include('partials/image-slider') -%>
+
+    <main>
+        <section class="main-section">
+            <div class="titlle-name">
+                <h4>Hollywood Dub</h4>
+            </div>
+
+            <div class="main-content">
+
+                <% data.forEach((e)=>{%>
+                    <article class="main-content-article">
+                        <a href="/hollywood/<%=e.link%>" title="<%= e.movieName%>" target="_blanck">
+                            <img src="<%=e.img%>" alt="<%=e.movieName%>" title="<%=e.movieName%>">
+                        </a>
+                        <span style="color: white;"><%=e.date.toLocaleDateString()%></span>
+                        <header>
+                            <h2>
+                                <a href="/hollywood/<%=e.link%>" title="<%= e.movieName%>" target="_blanck"><%=e.movieNameD%></a>
+                            </h2>
+                        </header>
+                    </article>
+                    <%})%>
+
+            </div>
+        </section>
+    </main>
+    <div class="numbers">
+        <% let j=0;data2.forEach((e,i)=>{%>
+            <%if(i%25==0){ j++%>
+        <a href="/hollywood/page/<%=j%>"><%=j%></a>
+   <% }%>
+        <%})%>
+     </div>
+    <div class="movie-story">
+        <p>Nmovies, Nmovies 2022, New Mkv HD Movies, Mp4 Movies, hd Movies, 2022 new bollywood movies download, High Quility Movies, hd mobile movies, hindi movies 2022 download, hd movies download, mobile movies, hollywood movies dubbed in hindi a to z,hollywood hindi dubbed movie download,hollywood hindi movie,hollywood movie hindi dubbed,hollywood movie in hindi,Hollywood Dubbed Movies,HD Hollywood Movies,Hollywood Movies in HD,Hollywood Movies Free Download,English Movies Download,English Movies Free Download, HD English Movies Download,English Movies in Mp4
+
+        </p>
+    </div>
+    <%- include('partials/footer') -%>
+    <script src="/js/js.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="en" />
+    <meta name="title" content="<%=data.movieName%>" />
+    <meta name="description" content="<%=data.des%>" />
+    <meta name="keywords" content="Pagalmovies, pagalmovies 2022, New Mkv HD Movies, Mp4 Movies, hd Movies, 2022 new bollywood movies download, High Quility Movies, hd mobile movies, hindi movies 2022 download,<%=data.keyword%>" />
+    <meta property="og:title" content="<%=data.movieName%>" />
+    <meta property="og:description" content="<%=data.story%>" />
+    <meta property="og:keywords" content="<%=data.keyword%> " />
+    <meta name="distribution" content="global" />
+    <meta name="author" content="Nmovies" />
+    <!-- css files -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/phone.css">
+    <title><%=data.movieNameD%></title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <%- include('partials/navbar') -%>
+
+    <!-- imgae slider sections -->
+    <%- include('partials/image-slider') -%>
+
+
+
+
+    <main>
+        <section class="main-section">
+            <div class="titlle-name">
+                <h4><%=data.movieNameD%></h4>
+            </div>
+
+            <div class="main-container">
+                <h1><%=data.movieName%></h1>
+                <div class="movie-info">
+                    <h5>Movei info</h5>
+                    <div class="movie-img">
+                        <img src="<%=data.img%>" class="img" alt="<%=data.movieName%>" title="<%=data.movieName%>">
+                    </div>
+                    <div class="movie-info-container">
+                        <h3>Movie Name: <span> <%=data.movieName%></span></h3>
+                        <h3>series: <span><%=data.series%></span></h3>
+                        <h3>Language: <span><%=data.Lan%></span></h3>
+                        <h3>category: <span><%=data.cat%></span></h3>
+                        <h3>Quality: <span><%=data.quality%></span> </h3>
+                        <h3>Relase Date: <span><%=data.rDate%></span> </h3>
+                    </div>
+                    <div>
+                        <h4 class="downloads-title">All Download Links</h4>
+                    </div>
+                    <div class="movie-downloads-links">
+                        <h4>movie dname download wala for <span>480p </span></h4>
+                        <a href="<%=data.downloadALink%>" title="download" target="_blanck"> Download Links</a>
+
+                        <h4>movie dname download wala for <span>720p</span></h4>
+                        <a href="<%=data.downloadBLink%>" title="downlaod" target="_blanck"> Download Links</a>
+
+                        <h4>movie dname download wala for <span>full Hd</span></h4>
+                        <a href="<%=data.downloadCLink%>" title="downlaod" target="_blanck"> Download Links</a>
+                        
+                    </div>
+                    <div class="movie-story">
+                        <h5 class="downloads-title">Story Line</h5>
+                        <p><%=data.story%></p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="movie-story">
+        <p><%=data.des%></p>
+    </div>
+    <!-- footer  -->
+    <%- include('partials/footer') -%>
+
+    <!-- <script src="/js/js.js"></script> -->
+    <script src="/js/view.js"></script>
+</body>
+
+</html>

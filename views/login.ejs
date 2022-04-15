@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <meta name="robots" content="noindex" />
+    <!-- css files -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/phone.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <!-- nave bar  -->
+    <%- include('partials/navbar') -%>
+
+    <!-- imgae slider sections -->
+
+
+
+    <main>
+        <section class="main-section">
+            <div class="titlle-name">
+                <h4>Login</h4>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-container">
+                    <form method="post">
+                        <input type="email" name="username" id="username" placeholder="Enter your Email" required >
+                        <input type="password" name="password" id="password" placeholder="Enter Your password" required>
+                        <input type="submit" value="Login">
+                    </form>
+
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+<!-- footer  -->
+<%- include('partials/footer') -%>
+    <script src="/js/js.js"></script>
+</body>
+
+</html>

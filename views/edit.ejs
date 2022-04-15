@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="robots" content="noindex" />
+    <title>edit data</title>
+</head>
+<body>
+    <!-- whole container ++ -->
+    <div class="container">
+        <!-- new data container  -->
+        <div class="admin-data">
+            <div class="admin-new-data dis">
+                <div class="title-name">
+                    <h4>Edit data</h4>
+                </div>
+                <form method="post" >
+                    <input type="text" name="movieName" placeholder="Enter Movie Name No download Name" required value="<%=data.movieName%>">
+                    <input type="text" name="movieNameD" placeholder="Enter Movie name With Downlaod Name" required value="<%=data.movieNameD%>">
+                    <input type="text" name="keyword" placeholder="Enter Movie Keyword" required value="<%=data.keyword%>">
+                    <input type="text" name="img" id="img" required value="<%=data.img%>">
+                    <input type="text" name="series" id="series" placeholder="Enter Movie part" required value="<%=data.series%>">
+                    <input type="text" name="Lan" id="series" placeholder="Enter Movie Language" required value="<%=data.Lan%>">
+                    <span><%=data.cat%></span>
+                    <select name="cat" id="cat" required style="margin-left: 1rem; padding: 10px 5px;outline: none;" >
+                        <option value="home">Home</option>
+                        <option value="hollywood">HollyWood Dub</option>
+                        <option value="south">South Dub</option>
+                        <option value="punjabi">Punjabi</option>
+                        <option value="Web">web series</option>
+                        <option value="bollywood">Bollywood</option>
+                    </select>
+                    <input type="text" name="quality" id="quality" value="480p,720p,fullHd" required  value="<%=data.quality%>">
+                    <input type="text" name="rDate" id="rDate" placeholder="Enter Realse Date Ex: 28 Aug 2018" required value="<%=data.rDate%>">
+                    <input type="text" name="downloadALink" id="downloadAlink" placeholder="Entere Download 480 Link" required value="<%=data.downloadALink%>">
+                    <input type="text" name="downloadBLink" id="downloadBlink" placeholder="Entere Download 720 Link" required value="<%=data.downloadBLink%>">
+                    <input type="text" name="downloadCLink" id="downloadClink" placeholder="Entere Download Hd Link" required value="<%=data.downloadCLink%>">
+                    <textarea name="story" id="story" rows="10" placeholder="Entere Story Line" required><%= data.story%></textarea>
+                    <textarea name="des" id="des" rows="10" placeholder="Enter Movie Descripton" required> <%=data.des%></textarea>
+                    <input type="submit" value="Update">
+                </form>
+
+            </div>
+
+    </div>
+    <script src="/js/admin.js"></script>
+</body>
+</html>

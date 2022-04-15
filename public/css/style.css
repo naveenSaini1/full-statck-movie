@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,400&display=swap'); /* robot*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* ========================styling of nav bar  */
+
+.nav{
+    background-color: #fbf1cd;
+    box-shadow: 10px 10px 5px #e3e3e3;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    border-bottom: 1px solid rgb(187 187 187);
+
+}
+
+/*====================== styling of nav up bar  */
+.nav-up{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.nav-up .logo{
+    margin-right: 2rem;
+}
+.nav-up a{
+    text-decoration: none;
+}
+
+.nav-up a:last-child{
+    color: orange;
+}
+
+.nav-up .logo h1{
+    font-size: 2rem;
+}
+
+.nav-up .logo h1 span:first-child{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+.nav-up .logo h1 span:last-child{
+    color: #F0A500;
+    font-family: cursive;
+}
+
+.nav-up .movie-request{
+    font-size: 1.3rem;
+    font-family: monospace;
+    background-color: #5a155a;
+    color: orange;
+    padding: 3px 6px;
+    border-radius: 4px;
+    box-shadow: 10px 10px 5px #e3c99b;
+}
+
+
+/*=========================================== styling of nav-dwon  */
+
+.nav .nav-down{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+    transition: all 0.7s linear;
+}
+
+.nav .nav-down .hem{
+    position: absolute;
+    right: 2rem;
+    top: 0.4rem;
+    display: none;
+}
+
+.nav .nav-down ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 61rem;
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.nav-down ul li{
+    list-style: none;
+}
+
+.nav-down ul li a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid;
+    padding: 7px 15px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    background: white;
+    border-radius: 6px;
+    transition: all 0.7s linear;
+}
+
+.nav-down ul li a:hover{
+    background-color: rgb(34, 13, 34);
+    color: rgb(255, 166, 0);
+}
+
+
+/* styling of imgae sliders  */
+.slider-sec{
+    margin-top: 1rem;
+    padding: 6px 7px;
+}
+
+.slider-sec-inside{
+    overflow-y: auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    overflow-x: hidden;
+    background-color: #f1f1f1;
+}
+
+.slider-sec-inside .slider-sec-article{
+    margin-left: 1rem;
+
+}
+
+.slider-sec-inside .slider-sec-article img,.img{
+    width: 6rem;
+    height: 7rem;
+    border-radius: 5px;
+}
+
+.img{
+    width: 10rem;
+    height: 12rem;
+}
+/* styling of main div  */
+.main-section{
+    margin-top: 1rem;
+}
+.main-section .titlle-name{
+    width: 70%;
+    background-color: black;
+    color: orange;
+    margin: auto;
+    padding: 1px 5px;
+    border-radius: 22px;
+}
+.main-section .titlle-name h4{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+   
+}
+.main-content{
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(234px,0fr));
+    justify-content: center;
+    align-items: baseline;
+}
+
+.main-content-article{
+    border: 2px solid black;
+    width: 14rem;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 5px;
+    background-color: black;
+    margin-top: 5px;
+    min-height: 25rem;
+}
+article:hover{
+    transform: scale(1.01);
+}
+
+.main-content-article img{
+    width: 12rem;
+    height: 14rem;
+}
+
+.main-content-article header h2{
+    font-size: 1.2rem;
+}
+.main-content-article header h2 a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+/* footer styling  */
+footer{
+    background-color: #624362;
+}
+footer .copyright-infp p{
+    text-align: center;
+    font-size: 1rem;
+    color: orange;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+footer .info-btn{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    
+}
+footer .info-btn ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem 0rem;
+}
+.info-btn ul li{
+    list-style: none;
+}
+.info-btn ul li a{
+    text-decoration: none;
+    color: orange;
+    border: 1px solid black;
+    padding: 4px 8px;
+    margin-left: 1rem;
+    font-family: monospace;
+    font-size: 1rem;
+    transition: all 0.5s linear;
+}
+.info-btn ul li a:hover{
+    color: white;
+    background-color: black;
+}
+
+/* ================================================ dmca page style ============================= */
+.dmca-content{
+    margin-top: 1rem;
+}
+.dmca-container{
+    background-color: #ede8e8;
+    padding: 13px 4px;
+}
+.dmca-container p{
+    font-family: cursive;
+}
+
+/* =========================================== styling of contact container ========================== */
+.contact-content{
+    margin-top: 1rem;
+}
+.contact-container{
+    width: 40vw;
+    margin:auto;
+}
+.contact-container input{
+    display: block;
+    padding: 4px 11px;
+    width: 83%;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-family: system-ui;
+    outline: none;
+    margin-top: 1rem;
+}
+.contact-container textarea{
+    padding: 4px 11px;
+    width: 83%;
+    font-size: 1rem;
+    font-family: system-ui;
+    outline: none;
+    margin-top: 1rem;
+    resize: none;
+}
+
+.contact-container input:last-child{
+    background-color: #5a155a;
+    color: orange;
+    cursor: pointer;
+}
+
+/* disclamier styliin============================================= */
+.disclamier{
+    padding: 5px 8px;
+}
+.disclamier li{
+    font-family: cursive;
+}
+
+/* movie donwload website styling ================================= */
+.main-container{
+    margin-top: 2rem;
+}
+.main-container >h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Roboto';
+}
+.main-container .movie-info{
+    text-align: center;
+    margin-top: 1rem;
+    
+}
+.movie-info >h5,.downloads-title{
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-family: monospace;
+    margin-bottom: 2rem;
+    background-color: purple;
+    color: orange;
+}
+.movie-img > img{
+    margin-bottom: 1rem;
+    border-radius: 6px;
+}
+.movie-info-container h3{
+    font-family: 'Roboto';
+    margin-bottom: 0.5rem;
+    
+}
+.movie-info-container h3 span{
+    font-family: cursive;
+    margin-left: 0.3rem;
+}
+
+
+.downloads-title{
+    margin-top: 2rem;
+    padding: 10px;
+}
+.movie-downloads-links{
+    margin-top: 2rem;
+}
+
+.movie-downloads-links > h4 {
+    font-family: 'Roboto';
+    font-size: 1.7rem;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    margin-top: 2rem;
+}
+.movie-downloads-links a{
+    text-decoration: none;
+    border: 1px solid;
+    padding: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #040202;
+    color: orange;
+    font-weight: bolder;
+}
+.movie-downloads-links h4 span{
+    color: red;
+}
+.movie-story{
+    margin-top: 4.5rem;
+}
+.movie-story h5{
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+.movie-story p,.keywords{
+    background-color: #e3e0e0;
+    padding: 15px 2rem;
+    display: inline-block;
+}
+
+.numbers{
+   margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    width: 90%;
+
+}
+.numbers a{
+    margin-left: 10px;
+    border: 1px solid blue;
+    padding: 4px 11px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+ /* .stylin of search box  */
+ .searchbox{
+    text-align: center;
+    margin-top: 1rem;
+ }
+ .searchbox input{
+     padding: 6px 15px;
+ }
+ .searchbox input:first-child{
+     font-size: 1rem;
+     font-family: 'Times New Roman', Times, serif;
+     outline: none;
+ }
